@@ -1,0 +1,30 @@
+{
+  "model_name": "LogisticRegression",
+  "params": {
+    "C": 1.0,
+    "penalty": "l2",
+    "solver": "lbfgs",
+    "max_iter": 1000,
+    "class_weight": "balanced",
+    "random_state": 42
+  },
+  "feature_names": [
+    "kills",
+    "deaths",
+    "assists",
+    "gold_earned",
+    "cs",
+    "wards_placed",
+    "wards_killed",
+    "damage_dealt",
+    "kda_ratio",
+    "gold_per_cs",
+    "vision_score",
+    "damage_efficiency",
+    "kill_participation",
+    "death_rate",
+    "gold_efficiency",
+    "combat_score"
+  ],
+  "is_fitted": true
+}

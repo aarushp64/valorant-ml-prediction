@@ -1,0 +1,28 @@
+{
+  "model_type": "RandomForestClassifier",
+  "target": "tier",
+  "features": [
+    "kills",
+    "deaths",
+    "assists",
+    "damage",
+    "headshots",
+    "matches",
+    "kd_ratio",
+    "damage_per_match",
+    "kills_per_match"
+  ],
+  "train_accuracy": 0.7902552204176334,
+  "test_accuracy": 0.4842300556586271,
+  "n_classes": 8,
+  "classes": [
+    "ascendant",
+    "bronze",
+    "diamond",
+    "gold",
+    "immortal",
+    "iron",
+    "platinum",
+    "silver"
+  ]
+}
