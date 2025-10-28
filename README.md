@@ -1,107 +1,210 @@
-# 🎮 Valorant ML Prediction System# 🎮 Valorant ML Prediction System# 🏆 Production ML System - League of Legends Match Prediction
+# 🎮 Valorant ML Prediction System# 🎮 Valorant ML Prediction System# 🎮 Valorant ML Prediction System# 🏆 Production ML System - League of Legends Match Prediction
 
 
 
-A machine learning system that predicts Valorant player tiers and match outcomes using player statistics. Built with scikit-learn and Streamlit for an interactive web interface.
+Machine learning system for predicting Valorant player tiers using real player statistics. Built with scikit-learn and deployed via Streamlit.
 
 
 
-![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)A machine learning system that predicts Valorant player tiers and match outcomes using player statistics. Built with scikit-learn and Streamlit for an interactive web interface.[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+![Python](https://img.shields.io/badge/python-3.8+-blue.svg)A machine learning system that predicts Valorant player tiers and match outcomes using player statistics. Built with scikit-learn and Streamlit for an interactive web interface.
 
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0+-orange.svg)
 
-![Streamlit](https://img.shields.io/badge/streamlit-1.25+-red.svg)[![Docker](https://img.shields.io/badge/docker-ready-blue.svg)](https://www.docker.com/)
+![Streamlit](https://img.shields.io/badge/streamlit-1.25+-red.svg)
 
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)[![Kubernetes](https://img.shields.io/badge/kubernetes-ready-blue.svg)](https://kubernetes.io/)
+![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)A machine learning system that predicts Valorant player tiers and match outcomes using player statistics. Built with scikit-learn and Streamlit for an interactive web interface.[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
 ## 🚀 Quick Start
 
-![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0+-orange.svg)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0+-orange.svg)
 
-1. **Clone the repository**
+```bash
 
-   ```bash![Streamlit](https://img.shields.io/badge/streamlit-1.25+-red.svg)
+# Clone and setup![Streamlit](https://img.shields.io/badge/streamlit-1.25+-red.svg)[![Docker](https://img.shields.io/badge/docker-ready-blue.svg)](https://www.docker.com/)
 
-   git clone https://github.com/aarushp64/valorant-ml-prediction.git
+git clone https://github.com/aarushp64/valorant-ml-prediction.git
 
-   cd valorant-ml-prediction![License](https://img.shields.io/badge/license-MIT-green.svg)A **production-grade machine learning system** for predicting League of Legends match outcomes, featuring advanced ML techniques, MLOps infrastructure, and enterprise-ready deployment capabilities.
+cd valorant-ml-prediction![License](https://img.shields.io/badge/license-MIT-green.svg)
 
-   ```
+pip install -r requirements.txt
 
+![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)[![Kubernetes](https://img.shields.io/badge/kubernetes-ready-blue.svg)](https://kubernetes.io/)
 
+# Train model
 
-2. **Install dependencies**
-
-   ```bash## 🚀 Quick Start## 🎯 Performance Achievements
-
-   pip install -r requirements.txt
-
-   ```
+python simple_ml_training.py## 🚀 Quick Start
 
 
 
-3. **Train the model**1. **Clone the repository**| Model | Accuracy | Cross-Validation | Status |
+# Launch app![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0+-orange.svg)[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-   ```bash
+streamlit run ultimate_app.py
 
-   python simple_ml_training.py   ```bash|-------|----------|------------------|--------|
-
-   ```
-
-   git clone <your-repo-url>| **Advanced CatBoost** | **100.0%** | 99.86% ± 0.29% | ✅ Production |
-
-4. **Launch the web app**
-
-   ```bash   cd ML-capstone| **Advanced RandomForest** | **100.0%** | 99.57% ± 0.86% | ✅ Production |
-
-   streamlit run ultimate_app.py
-
-   ```   ```| Advanced LogisticRegression | 97.5% | 95.14% ± 2.36% | ✅ Production |
+```1. **Clone the repository**
 
 
 
-5. **Open your browser** to `http://localhost:8501`| Advanced ExtraTrees | 97.0% | 94.71% ± 1.07% | ✅ Production |
+Open `http://localhost:8501` in your browser.   ```bash![Streamlit](https://img.shields.io/badge/streamlit-1.25+-red.svg)
 
 
 
-## 📊 Features2. **Install dependencies**
+## 📊 Features   git clone https://github.com/aarushp64/valorant-ml-prediction.git
 
 
+
+- **ML Tier Prediction**: RandomForest classifier (48% test accuracy)   cd valorant-ml-prediction![License](https://img.shields.io/badge/license-MIT-green.svg)A **production-grade machine learning system** for predicting League of Legends match outcomes, featuring advanced ML techniques, MLOps infrastructure, and enterprise-ready deployment capabilities.
+
+- **Interactive UI**: Real-time predictions via Streamlit
+
+- **Real Dataset**: 2,694 Valorant player records   ```
+
+- **Smart Fallback**: Heuristic predictions when ML fails
+
+- **One-Click Demo**: Clone and run immediately
+
+
+
+## 🎯 Model Performance2. **Install dependencies**
+
+
+
+| Metric | Value |   ```bash## 🚀 Quick Start## 🎯 Performance Achievements
+
+|--------|-------|
+
+| Algorithm | Random Forest |   pip install -r requirements.txt
+
+| Training Accuracy | 79% |
+
+| Test Accuracy | 48% |   ```
+
+| Dataset Size | 2,694 players |
+
+| Features | 9 engineered features |
+
+
+
+## 📁 Project Structure3. **Train the model**1. **Clone the repository**| Model | Accuracy | Cross-Validation | Status |
+
+
+
+```   ```bash
+
+├── data/raw/valorant_dataset_v3.csv    # Training data
+
+├── models/simple/                      # Model artifacts     python simple_ml_training.py   ```bash|-------|----------|------------------|--------|
+
+├── src/                                # Core modules
+
+├── tests/                              # Unit tests   ```
+
+├── simple_ml_training.py               # Training script
+
+├── ultimate_app.py                     # Streamlit app   git clone <your-repo-url>| **Advanced CatBoost** | **100.0%** | 99.86% ± 0.29% | ✅ Production |
+
+└── requirements.txt                    # Dependencies
+
+```4. **Launch the web app**
+
+
+
+## 🔧 Usage   ```bash   cd ML-capstone| **Advanced RandomForest** | **100.0%** | 99.57% ± 0.86% | ✅ Production |
+
+
+
+**Train new model:**   streamlit run ultimate_app.py
+
+```bash
+
+python simple_ml_training.py   ```   ```| Advanced LogisticRegression | 97.5% | 95.14% ± 2.36% | ✅ Production |
+
+```
+
+
+
+**Run web interface:**
+
+```bash5. **Open your browser** to `http://localhost:8501`| Advanced ExtraTrees | 97.0% | 94.71% ± 1.07% | ✅ Production |
+
+streamlit run ultimate_app.py
+
+```
+
+
+
+**Run tests:**## 📊 Features2. **Install dependencies**
+
+```bash
+
+pytest tests/
+
+```
 
 - **ML Model Training**: RandomForest classifier for tier prediction   ```bash**🚀 Improvement: +42.5% accuracy gain** (from 57.5% baseline to 100% production)
 
+## 📈 Technical Details
+
 - **Interactive Web UI**: Streamlit-based prediction interface
 
-- **Real Data**: Trained on actual Valorant player statistics   pip install -r requirements.txt
+**Features engineered from raw data:**
 
-- **Smart Fallback**: Graceful degradation to heuristic predictions
+- KD ratio (kills/deaths)- **Real Data**: Trained on actual Valorant player statistics   pip install -r requirements.txt
 
-- **Model Persistence**: Trained models saved and reused   ```## ⚡ Quick Start
+- Damage per match
+
+- Kills per match  - **Smart Fallback**: Graceful degradation to heuristic predictions
+
+- Headshot percentage
+
+- Combat efficiency metrics- **Model Persistence**: Trained models saved and reused   ```## ⚡ Quick Start
 
 
 
-## 🎯 Model Performance
+**Model pipeline:**
 
+1. Load Valorant dataset (2,694 players)
 
+2. Clean data and engineer features## 🎯 Model Performance
+
+3. Train RandomForest classifier
+
+4. Save model artifacts with joblib
+
+5. Deploy via Streamlit with fallback logic
 
 - **Algorithm**: Random Forest Classifier3. **Train the model**### 1. Install Dependencies
 
+## 🤝 Contributing
+
 - **Training Accuracy**: 79%
 
-- **Test Accuracy**: 48%   ```bash```bash
+1. Fork repo
 
-- **Dataset**: 2,694 Valorant player records
+2. Create feature branch- **Test Accuracy**: 48%   ```bash```bash
 
-- **Features**: KD ratio, damage per match, kills per match, etc.   python simple_ml_training.pypip install -r requirements.txt
+3. Add tests
 
-
-
-## 📁 Project Structure   ``````
+4. Submit PR- **Dataset**: 2,694 Valorant player records
 
 
 
+## 📄 License- **Features**: KD ratio, damage per match, kills per match, etc.   python simple_ml_training.pypip install -r requirements.txt
+
+
+
+MIT License - see [LICENSE](LICENSE) file.
+
+
+
+## 🎮 Live Demo## 📁 Project Structure   ``````
+
+
+
+**Repository**: https://github.com/aarushp64/valorant-ml-prediction  
+
+**Demo**: Run `streamlit run ultimate_app.py` locally
 ```
 
 ├── data/
